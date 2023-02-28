@@ -49,7 +49,6 @@ func (mt *Multi) Run() (map[string]interface{}, error) {
 			return nil, fmt.Errorf("%s: %s", name, err)
 		}
 		results[name] = result
-		fmt.Println(result)
 	}
 
 	return results, nil
